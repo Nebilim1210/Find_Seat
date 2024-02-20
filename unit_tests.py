@@ -1,5 +1,5 @@
 import unittest
-from boarding_pass import decode_boarding_pass, decode_row, decode_column
+from find_seat import decode_boarding_pass, decode_row, decode_column
 
 class BoardingPassDecodeTest(unittest.TestCase):
 
