@@ -113,7 +113,6 @@ def main():
     for i in range(len(occupied_seats) - 1):
         if occupied_seats[i] + 1 != occupied_seats[i + 1]:
             missing_seat_id = occupied_seats[i] + 1
-            print("missing_seat_id :", missing_seat_id)
             break
 
     print("Your place's ID is :", missing_seat_id)
