@@ -101,14 +101,6 @@ def decode_column(column_code):
 
 def main():
     """Main Script Function. Tries to find the missing seat in scan.txt"""
-
-    # Testing given examples
-    boarding_passes = ["BFFFBBFRRR", "FFFBBBFRRR", "BBFFBBFRLL"]
-    for boarding_pass in boarding_passes:
-        seat_id, row, column = decode_boarding_pass(boarding_pass)
-        print(f"Boarding Pass: {boarding_pass}, Row: {row}, Column: {column}, Seat ID: {seat_id}")
-
-
     # Reading scan.txt
     with open("scan.txt", "r") as scanfile:
         boarding_passes = scanfile.read().splitlines()
